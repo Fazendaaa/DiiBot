@@ -1,7 +1,11 @@
 import { greeterScene } from 'greeter';
-import { Scenes } from 'telegraf';
+import { IBotContext } from 'model';
+import {
+  Scenes
+} from 'telegraf';
 
-export const statge = new Scenes.Stage<Scenes.SceneContext>([
+export const controller = new Scenes.Stage<Scenes.SceneContext>([
+  options,
   greeterScene
 ], {
   ttl: 10

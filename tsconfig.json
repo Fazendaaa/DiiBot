@@ -48,6 +48,12 @@
       "greeter": [
         "controller/greeter/greeter.ts"
       ],
+      "controller": [
+        "controller/controller.ts"
+      ],
+      "model": [
+        "model/model.d.ts"
+      ],
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
