@@ -9,5 +9,3 @@ pupilsScene.enter(({ i18n, replyWithMarkdown }: IBotContext) => replyWithMarkdow
 pupilsScene.leave(({ i18n, replyWithMarkdown }: IBotContext) => replyWithMarkdown(i18n.t('')));
 
 pupilsScene.command('back', leave<Scenes.SceneContext>());
-pupilsScene.on('text', (ctx) => ctx.reply(ctx.message.text));
-pupilsScene.on('message', (ctx) => ctx.reply('Only text messages please'));

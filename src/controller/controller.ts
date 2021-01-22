@@ -1,16 +1,14 @@
+import { contactScene } from 'contact';
+import { feedbackScene } from 'feedback';
 import { greeterScene } from 'greeter';
-import {
-  Scenes
-} from 'telegraf';
-import { contactScene } from './contact/contact';
-import { feedbackScene } from './feedback/feedback';
-import { locationScene } from './location/location';
-import { optionsScene } from './options/options';
-import { preSchoolScene } from './preSchool/preSchool';
-import { pupilsScene } from './pupils/pupils';
-import { settingsScene } from './settings/settings';
-import { studensScene } from './students/students';
-import { trainingsScene } from './trainings/trainings';
+import { locationScene } from 'location';
+import { optionsScene } from 'options';
+import { preSchoolScene } from 'preSchool';
+import { pupilsScene } from 'pupils';
+import { settingsScene } from 'settings';
+import { studensScene } from 'students';
+import { Scenes } from 'telegraf';
+import { trainingsScene } from 'trainings';
 
 export const controller = new Scenes.Stage<Scenes.SceneContext>([
   contactScene,

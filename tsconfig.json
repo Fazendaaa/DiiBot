@@ -45,11 +45,38 @@
     "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     "baseUrl": "./src",                       /* Base directory to resolve non-absolute module names. */
     "paths": {                                /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+      "controller": [
+        "controller/controller.ts"
+      ],
       "greeter": [
         "controller/greeter/greeter.ts"
       ],
-      "controller": [
-        "controller/controller.ts"
+      "contact": [
+        "controller/contact/contact.ts"
+      ],
+      "feedback": [
+        "controller/feedback/feedback.ts"
+      ],
+      "location": [
+        "controller/location/location.ts"
+      ],
+      "options": [
+        "controller/options/options.ts"
+      ],
+      "preSchool": [
+        "controller/preSchool/preSchool.ts"
+      ],
+      "pupils": [
+        "controller/pupils/pupils.ts"
+      ],
+      "settings": [
+        "controller/settings/settings.ts"
+      ],
+      "students": [
+        "controller/students/students.ts"
+      ],
+      "trainings": [
+        "controller/trainings/trainings.ts"
       ],
       "model": [
         "model/model.d.ts"

@@ -9,5 +9,3 @@ preSchoolScene.enter(({ i18n, replyWithMarkdown }: IBotContext) => replyWithMark
 preSchoolScene.leave(({ i18n, replyWithMarkdown }: IBotContext) => replyWithMarkdown(i18n.t('')));
 
 preSchoolScene.command('back', leave<Scenes.SceneContext>());
-preSchoolScene.on('text', (ctx) => ctx.reply(ctx.message.text));
-preSchoolScene.on('message', (ctx) => ctx.reply('Only text messages please'));

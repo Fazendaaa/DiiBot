@@ -9,5 +9,3 @@ contactScene.enter(({ i18n, replyWithMarkdown }: IBotContext) => replyWithMarkdo
 contactScene.leave(({ i18n, replyWithMarkdown }: IBotContext) => replyWithMarkdown(i18n.t('')));
 
 contactScene.command('back', leave<Scenes.SceneContext>());
-contactScene.on('text', (ctx) => ctx.reply(ctx.message.text));
-contactScene.on('message', (ctx) => ctx.reply('Only text messages please'));
