@@ -1,8 +1,13 @@
-import { IBotContext } from "model";
-import { Scenes } from "telegraf";
+import { IBotContext } from 'model';
+import { Scenes } from 'telegraf';
 
 const { leave } = Scenes.Stage;
 
-const options = new Scenes.BaseScene<Scenes.SceneContext>('options');
+export const optionsScene = new Scenes.BaseScene<Scenes.SceneContext>('options');
 
-options.enter(async ({ i18n, replyWithMarkdown }: IBotContext) => replyWithMarkdown(i18n.t('optionMenu'),));
+optionsScene.enter(({ i18n, replyWithMarkdown }: IBotContext) => replyWithMarkdown(i18n.t('')));
+optionsScene.leave(({ i18n, replyWithMarkdown }: IBotContext) => replyWithMarkdown(i18n.t('')));
+
+optionsScene.command('back', leave<Scenes.SceneContext>());
+optionsScene.on('text', (ctx) => ctx.reply(ctx.message.text));
+optionsScene.on('message', (ctx) => ctx.reply('Only text messages please'));
